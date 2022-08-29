@@ -13,7 +13,7 @@ Movie-Geeks is a platform that will recommend the users movies based on their in
 
 ## DETAILED WORKFLOW
  ![image](https://user-images.githubusercontent.com/59362251/187153053-6c4724a2-4ef2-451a-a56f-632ca68215c7.png)
-PROCEDURE
+### PROCEDURE
 1.	User speaks to the device and the device hears the invocation word (Alexa).
 2.	Audio is streamed from the Alexa Device to Amazon Alexa Service.
 3.	Alexa Service converts the voice stream into text and determines that the request is for a skill by looking at the skill configuration information.
