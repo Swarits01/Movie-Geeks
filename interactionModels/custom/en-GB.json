@@ -1,0 +1,176 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "movie zone",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "cancel"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "help me"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "terminate",
+            "stop"
+          ]
+        },
+        {
+          "name": "MovieIntent",
+          "slots": [
+            {
+              "name": "Movie",
+              "type": "AMAZON.Movie",
+              "multipleValues": {
+                "enabled": true
+              }
+            }
+          ],
+          "samples": [
+            "What do you know about {Movie}",
+            "Tell me about {Movie}",
+            "{Movie}"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "TopRatedMovieIntent",
+          "slots": [],
+          "samples": [
+            "top rated movies",
+            "Show me Top Rated Movies"
+          ]
+        },
+        {
+          "name": "PopularMoviesByGenreIntent",
+          "slots": [
+            {
+              "name": "genre",
+              "type": "genres"
+            }
+          ],
+          "samples": [
+            "select  {genre}",
+            "I would like to choose {genre}",
+            "{genre}"
+          ]
+        },
+        {
+          "name": "UpcomingMoviesIntent",
+          "slots": [],
+          "samples": [
+            "are there any interesting upcoming movies",
+            "tell me about upcoming movies",
+            "show me upcoming movies",
+            "upcoming movies"
+          ]
+        },
+        {
+          "name": "MovieQuotesIntent",
+          "slots": [
+            {
+              "name": "movie",
+              "type": "AMAZON.Movie"
+            }
+          ],
+          "samples": [
+            "Show me {movie} Quotes"
+          ]
+        },
+        {
+          "name": "MoviePlotIntent",
+          "slots": [
+            {
+              "name": "movie",
+              "type": "AMAZON.Movie",
+              "multipleValues": {
+                "enabled": true
+              }
+            }
+          ],
+          "samples": [
+            "plot of {movie}"
+          ]
+        },
+        {
+          "name": "MovieTaglinesIntent",
+          "slots": [
+            {
+              "name": "movie",
+              "type": "AMAZON.Movie",
+              "multipleValues": {
+                "enabled": true
+              }
+            }
+          ],
+          "samples": [
+            "tagline of {movie}",
+            "Famous tagline of {movie}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Stranger things"
+              }
+            },
+            {
+              "name": {
+                "value": "avengers endgame"
+              }
+            }
+          ],
+          "name": "AMAZON.Movie"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "action"
+              }
+            },
+            {
+              "name": {
+                "value": "comedy"
+              }
+            },
+            {
+              "name": {
+                "value": "horror"
+              }
+            },
+            {
+              "name": {
+                "value": "thriller"
+              }
+            },
+            {
+              "name": {
+                "value": "adventure"
+              }
+            }
+          ],
+          "name": "genres"
+        }
+      ]
+    }
+  },
+  "version": "22"
+}
